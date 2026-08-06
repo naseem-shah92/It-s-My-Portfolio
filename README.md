@@ -17,13 +17,18 @@ npm run build
 
 Type-checks the whole project (`tsc -b`) then builds to `dist/`.
 
-## Deploy to Netlify
+## Deploy to Vercel
 
-1. Push this folder to a GitHub repo
-2. On Netlify: **New site from Git** → pick the repo
-3. Build command: `npm run build`
-4. Publish directory: `dist`
-5. Deploy
+1. Push this project to a GitHub repository.
+2. Open Vercel and click **Add New Project**.
+3. Import this GitHub repository.
+4. Vercel should auto-detect Vite. Use these settings if needed:
+   - Framework Preset: `Vite`
+   - Build Command: `npm run build`
+   - Output Directory: `dist`
+5. Click **Deploy**.
+
+This project is already set up for Vercel with a standard Vite build.
 
 ## Project structure
 
