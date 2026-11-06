@@ -1,7 +1,12 @@
 import { works } from "../data";
 import { soleCraftShot, aetherAiShot, rolexShot, kolachiShot } from "../assets/images";
 
+import logixelShot from "../assets/logixel-project.webp";
+import leadgenShot from "../assets/leadgen-project.webp";
+
 const shotMap: Record<string, string> = {
+  logixel: logixelShot,
+  leadgen: leadgenShot,
   solecraft: soleCraftShot,
   aetherai: aetherAiShot,
   rolex: rolexShot,
@@ -23,7 +28,7 @@ export default function Works() {
           <div className="section-title reveal-on-scroll">Projects I've Shipped</div>
         </div>
         <p className="section-desc reveal-on-scroll">
-          A few live builds — from e-commerce flows to product landing pages, designed and coded end to end.
+          Explore live builds across AI automation, lead generation, e-commerce, and product websites.
         </p>
       </div>
 

@@ -43,6 +43,22 @@ export interface WorkItem {
 
 export const works: WorkItem[] = [
   {
+    id: "logixel",
+    url: "https://logixels.com/",
+    title: "Logixel Technologies",
+    desc: "Studio website showcasing AI automation, custom web platforms, and software development services.",
+    tags: ["Agency Website", "AI Automation"],
+    thumbClass: "work-thumb-logixel",
+  },
+  {
+    id: "leadgen",
+    url: "https://ai-leads-gen2.vercel.app/",
+    title: "LeadGen AI",
+    desc: "An AI research and outreach CRM that finds businesses, audits their websites, and explains why each lead is a fit.",
+    tags: ["Lead Generation", "CRM"],
+    thumbClass: "work-thumb-leadgen",
+  },
+  {
     id: "solecraft",
     url: "https://solecraftly.netlify.app/",
     title: "SoleCraft",

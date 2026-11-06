@@ -1,3 +1,4 @@
+import LiveBuild from "./components/LiveBuild";
 import Preloader from "./components/Preloader";
 import Nav from "./components/Nav";
 import Hero from "./components/Hero";
@@ -22,6 +23,7 @@ function App() {
       <Works />
       <Contact />
       <RobotAssistant />
+      <LiveBuild />
     </>
   );
 }

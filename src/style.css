@@ -656,6 +656,8 @@
     display: block;
     transition: transform 0.5s cubic-bezier(0.16,0.84,0.44,1);
   }
+  .work-thumb-logixel img { object-position: center; }
+  .work-thumb-leadgen img { object-position: 25% center; }
   .work-thumb::after {
     content: '';
     position: absolute;
