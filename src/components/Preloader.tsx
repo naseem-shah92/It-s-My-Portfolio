@@ -4,7 +4,7 @@ import { useEffect, useState } from "react";
  * Black intro screen. Stays visible until the user scrolls, swipes,
  * presses a key, or clicks — then fades out and adds `.revealed` to
  * <body>, which triggers the hero's entrance animations in sync.
- * A 4.5s timeout is a safety net so the page can never feel "stuck".
+ * The short automatic reveal hands off to the multi-cursor build intro.
  */
 export default function Preloader() {
   const [hidden, setHidden] = useState(false);
@@ -36,7 +36,7 @@ export default function Preloader() {
     window.addEventListener("touchmove", revealPage, { passive: true });
     window.addEventListener("keydown", onKeyReveal);
 
-    const fallbackTimer = setTimeout(revealPage, 4500);
+    const fallbackTimer = setTimeout(revealPage, 1050);
 
     return () => {
       window.removeEventListener("wheel", revealPage);
